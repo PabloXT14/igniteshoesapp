@@ -1,4 +1,4 @@
-package com.rocketseat.igniteshoesapp
+package com.rocketseat.igniteshoes
 
 import android.os.Build
 import android.os.Bundle

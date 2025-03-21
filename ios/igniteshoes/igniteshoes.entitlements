@@ -6,7 +6,7 @@
     <string>development</string>
     <key>com.apple.security.application-groups</key>
     <array>
-      <string>group.com.rocketseat.igniteshoesapp.onesignal</string>
+      <string>group.com.rocketseat.igniteshoes.onesignal</string>
     </array>
   </dict>
 </plist>

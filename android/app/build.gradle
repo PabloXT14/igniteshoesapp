@@ -86,9 +86,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.rocketseat.igniteshoesapp'
+    namespace 'com.rocketseat.igniteshoes'
     defaultConfig {
-        applicationId 'com.rocketseat.igniteshoesapp'
+        applicationId 'com.rocketseat.igniteshoes'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

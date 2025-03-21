@@ -1,4 +1,4 @@
-package com.rocketseat.igniteshoesapp
+package com.rocketseat.igniteshoes
 
 import android.app.Application
 import android.content.res.Configuration
