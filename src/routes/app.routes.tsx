@@ -6,6 +6,7 @@ import { useTheme } from 'native-base'
 import { Cart } from '../screens/Cart'
 import { Home } from '../screens/Home'
 import { Details } from '../screens/Details'
+import { Platform } from 'react-native'
 
 const { Navigator, Screen } = createBottomTabNavigator()
 
@@ -22,6 +23,7 @@ export function AppRoutes() {
         tabBarStyle: {
           borderTopWidth: 0,
           backgroundColor: colors.gray[800],
+          paddingTop: Platform.OS === 'ios' ? 20 : 5,
         },
       }}
     >
