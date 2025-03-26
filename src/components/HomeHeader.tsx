@@ -11,18 +11,15 @@ import {
 
 import userPhotoDefault from '../assets/userPhotoDefault.png'
 import { TouchableOpacity } from 'react-native'
-import { deleteTagUserEmail } from '@/notifications/notificationsTags'
 
 export function HomeHeader() {
   const toast = useToast()
 
   function handleSignOut() {
-    deleteTagUserEmail()
-
     toast.show({
       placement: 'top',
       bgColor: 'green.500',
-      title: 'Tag de notificação excluída',
+      title: 'Deslogado com sucesso',
     })
   }
 

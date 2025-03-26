@@ -13,7 +13,7 @@ import { THEME } from './src/theme'
 import { Loading } from './src/components/Loading'
 
 import { CartContextProvider } from './src/contexts/CartContext'
-import { createTagUserEmail } from '@/notifications/notificationsTags'
+import { createUserInfoTags } from '@/notifications/notificationsTags'
 
 OneSignal.initialize(process.env.ONESIGNAL_APP_ID)
 OneSignal.Notifications.requestPermission(true)
@@ -21,7 +21,7 @@ OneSignal.Notifications.requestPermission(true)
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold })
 
-  createTagUserEmail('pabloxt14@gmail.com')
+  createUserInfoTags()
 
   return (
     <NativeBaseProvider theme={THEME}>
