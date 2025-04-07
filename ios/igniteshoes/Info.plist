@@ -27,6 +27,7 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
+          <string>igniteshoes</string>
           <string>com.rocketseat.igniteshoes</string>
         </array>
       </dict>
