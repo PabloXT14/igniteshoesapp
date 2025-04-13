@@ -1,3 +1,4 @@
+import { Platform } from 'react-native'
 import { Ionicons, Feather } from '@expo/vector-icons'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
@@ -6,12 +7,13 @@ import { useTheme } from 'native-base'
 import { Cart } from '../screens/Cart'
 import { Home } from '../screens/Home'
 import { Details } from '../screens/Details'
-import { Platform } from 'react-native'
+import { useCart } from '@/hooks/useCart'
 
 const { Navigator, Screen } = createBottomTabNavigator()
 
 export function AppRoutes() {
   const { colors, sizes } = useTheme()
+  const { cart } = useCart()
 
   return (
     <Navigator
@@ -44,6 +46,11 @@ export function AppRoutes() {
           tabBarIcon: ({ color }) => (
             <Feather name="shopping-bag" color={color} size={sizes[6]} />
           ),
+          tabBarBadge: cart.length > 0 ? cart.length : undefined,
+          tabBarBadgeStyle: {
+            backgroundColor: colors.green[500],
+            color: colors.white,
+          },
         }}
       />
 
